@@ -1,21 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First project</title>
-</head>
-<body>
- <p> Hello Matthew</p> 
- <a href="https://www.youtube.com">link</a>
- <img src="https://www.apple.com/v/macbook-pro-13/m/images/overview/hero_endframe__bsza6x4fldiq_large_2x.jpg">
-</body>
-</html>
 <style>
-    p{
-        color: red
+    body{
+        margin:0;
     }
-    a{color:blue}
-    img{width: 150px;height: 150px;}
+    .bg-gray-900{
+        background-color: #121826;
+    }
+.text-white{
+    color:white;
+}
+
+.block{
+    display:block;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+.inline{
+    display:inline;
+}
+.none{
+    display:none;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+
+    justify-content: space-between;
+}
+.justify-content{
+    justify-content:center;
+}
+.item-center{
+align-items: center;
+}
+
 </style>
+<body>
+<header class="bg-gray-900">
+    <div class="flex justify-content item-center">
+        
+        <img src="./svg-1.svg" alt="" style="width:50px; height:50px;">
+        <a href=""  class="text-white ">Pricing</a>
+        <a href=""  class="text-white">courses</a>
+        <a href=""  class="text-white">Blog</a>
+        <a href=""  class="text-white">Forum</a>
+    </div>
+    <div>
+        <a href=""class="text-white block">Login</a>
+        <button>Sign up</button>
+    </div>
+</header>
+
+</body>
+
+
+
