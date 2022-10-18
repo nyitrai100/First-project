@@ -1,6 +1,12 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <style>
+
     body{
         margin:0;
+        font-family: 'Lato', sans-serif;
     }
     .bg-gray-900{
         background-color: #121826;
@@ -55,20 +61,41 @@ align-items: center;
     padding-top: 18px;
     padding-bottom: 18px;
 }
+
+.py-8{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.px-16{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.no-underline{
+    text-decoration: none;
+
+}
+
 </style>
+</head>
+
 <body>
 <header class="bg-gray-900 flex justify-between"
 style="padding: 18px 21px;">
-    <div class="flex justify-content item-center">
+    <div class="flex justify-content item-center ">
         
         <img src="./svg-1.svg" alt="" style="width:50px; height:50px; margin-right: 50px;">
-        <a href=""  class="text-white ">Pricing</a>
-        <a href=""  class="text-white">courses</a>
-        <a href=""  class="text-white">Blog</a>
-        <a href=""  class="text-white">Forum</a>
+        <a href=""  class="text-white py-8 px-16 no-underline" >Pricing</a>
+        <a href=""  class="text-white py-8 px-16 no-underline">Courses</a>
+        <a href=""  class="text-white py-8 px-16 no-underline">Blog</a>
+        <a href=""  class="text-white py-8 px-16 no-underline">Forum</a>
     </div>
-    <div class="flex item-center flex-end">
-        <a href=""class="text-white block">Login</a>
+    <div class="flex item-center flex-end ">
+        <a href=""class="text-white block py-8 px-16 no-underline" style="margin-right:12px;">Login</a>
         <button>Sign up</button>
     </div>
 </header>
