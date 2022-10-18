@@ -36,19 +36,38 @@
 .item-center{
 align-items: center;
 }
+.flex-end{
+    align-content: flex-end;
+}
 
+.m-8{
+    margin: 8px;
+}
+
+.p-8{
+    padding: 8px;
+}
+
+.pt-18{
+    padding-top: 18px;
+}
+.py-18{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
 </style>
 <body>
-<header class="bg-gray-900">
+<header class="bg-gray-900 flex justify-between"
+style="padding: 18px 21px;">
     <div class="flex justify-content item-center">
         
-        <img src="./svg-1.svg" alt="" style="width:50px; height:50px;">
+        <img src="./svg-1.svg" alt="" style="width:50px; height:50px; margin-right: 50px;">
         <a href=""  class="text-white ">Pricing</a>
         <a href=""  class="text-white">courses</a>
         <a href=""  class="text-white">Blog</a>
         <a href=""  class="text-white">Forum</a>
     </div>
-    <div>
+    <div class="flex item-center flex-end">
         <a href=""class="text-white block">Login</a>
         <button>Sign up</button>
     </div>
