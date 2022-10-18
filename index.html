@@ -1,11 +1,17 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <style>
 
     body{
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothin: grayscale;
         margin:0;
+        font-family: 'Lato', sans-serif;
+    }
+
+    button{
         font-family: 'Lato', sans-serif;
     }
     .bg-gray-900{
@@ -70,6 +76,14 @@ align-items: center;
     padding-left: 16px;
     padding-right: 16px;
 }
+.py-12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.px-28{
+    padding-left: 28px;
+    padding-right: 28px;
+}
 
 .font-lato{
     font-family: 'Lato', sans-serif;
@@ -78,6 +92,26 @@ align-items: center;
 .no-underline{
     text-decoration: none;
 
+}
+
+.bg-brand-teal{
+    background-color: #539D98;
+}
+
+.border-none{
+    border:none;
+}
+.rounded-full{
+    border-radius:99999px;
+}
+.font-bold{
+    font-weight: 700;
+}
+.uppercase{
+    text-transform:uppercase;
+}
+.text-sm{
+    font-size: 14px;
 }
 
 </style>
@@ -96,7 +130,7 @@ style="padding: 18px 21px;">
     </div>
     <div class="flex item-center flex-end ">
         <a href=""class="text-white block py-8 px-16 no-underline" style="margin-right:12px;">Login</a>
-        <button>Sign up</button>
+        <button class="bg-brand-teal text-white border-none rounded-full py-12 px-28 font-bold uppercase text-sm">Sign up</button>
     </div>
 </header>
 
