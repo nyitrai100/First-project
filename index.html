@@ -15,7 +15,7 @@
         font-family: 'Lato', sans-serif;
     }
     .bg-gray-900{
-        background-color: #121826;
+        background-color: #84a9ce;
     }
 .text-white{
     color:white;
@@ -117,11 +117,21 @@ align-items: center;
     width:100%
 }
 
+.relative{
+    position: relative;
+}
+.z-10 {
+    z-index: 10;
+}
+.object-cover {
+    object-fit: cover;
+}
+
 </style>
 </head>
 
 <body>
-<header class="bg-gray-900 flex justify-between"
+<header class="bg-gray-900 flex justify-between relative z-10"
 style="padding: 18px 21px;">
     <div class="flex justify-content item-center ">
         
@@ -136,8 +146,19 @@ style="padding: 18px 21px;">
         <button class="bg-brand-teal text-white border-none rounded-full py-12 px-28 font-bold uppercase text-sm">Sign up</button>
     </div>
 </header>
-<section>
-    <img src="./img/hero.png" alt="'hero" class="w-full">
+<section class="relative" style="top:-40px">
+    <video
+    loop="loop"
+    autoplay="autoplay"
+    playsinline
+    muted="muted"
+    class="w-full h-full object-cover"
+    style="min-height:500px;"
+    src="/First project/video/background.mp4">
+        
+
+    </video>
+
 </section>
 </body>
 
