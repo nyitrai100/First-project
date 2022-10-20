@@ -148,12 +148,17 @@ align-items: center;
     position: absolute;
 }
 
+.mx-auto{
+    margin-left:auto;
+    margin-right:auto
+}
+
 </style>
 </head>
 
 <body>
-<header class="flex justify-between relative z-10"
-style="padding: 18px 21px;">
+<header class="flex justify-between relative z-10 mx-auto"
+style="padding: 18px 21px; max-width:1200px;">
     <div class="flex justify-content item-center ">
         
         <img src="./svg-1.svg" alt="" style="width:50px; height:50px; margin-right: 50px;">
@@ -167,7 +172,7 @@ style="padding: 18px 21px;">
         <button class="bg-brand-teal text-white border-none rounded-full py-12 px-28 font-bold uppercase text-sm">Sign up</button>
     </div>
 </header>
-<section >
+<section>
     
     <video
     loop="loop"
@@ -175,14 +180,14 @@ style="padding: 18px 21px;">
     playsinline
     muted="muted"
     class="w-full h-full object-cover absolute"
-    style="min-height:500px; top:-40px"
+    style="height:700px; top:-40px"
     src="./video/background.mp4">
         
     </video>
-    <div style="padding: 0px 21px;">
+    <div style="padding: 0px 21px; padding-top: 200px; max-width:1200px;" class="mx-auto">
    
 
-    <div class="relative z-10 " style="max-width:380px; ">
+    <div class="relative z-10 " style="max-width:380px">
         <h1 style="font-size: 40px" class="text-white"> Boost Your <br /> <span class="text-brand-teal" >Development Career</span>
         </h1>
         <p class="text-white" style="max-width:300; text-align: left; margin-top: 15px;;">
