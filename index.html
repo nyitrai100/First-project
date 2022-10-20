@@ -14,6 +14,14 @@
     button{
         font-family: 'Lato', sans-serif;
     }
+
+    h1{
+        margin: 0;
+    }
+    p{
+        margin: 0;
+
+    }
     .bg-gray-900{
         background-color: #84a9ce;
     }
@@ -126,12 +134,25 @@ align-items: center;
 .object-cover {
     object-fit: cover;
 }
+.text-brand-teal{
+    color: #90CAC7
+}
+.text-brand-teal-dark{
+    color:#539D98
+}
+
+.bg-white{
+    background-color: white;
+}
+.absolute{
+    position: absolute;
+}
 
 </style>
 </head>
 
 <body>
-<header class="bg-gray-900 flex justify-between relative z-10"
+<header class="flex justify-between relative z-10"
 style="padding: 18px 21px;">
     <div class="flex justify-content item-center ">
         
@@ -146,19 +167,31 @@ style="padding: 18px 21px;">
         <button class="bg-brand-teal text-white border-none rounded-full py-12 px-28 font-bold uppercase text-sm">Sign up</button>
     </div>
 </header>
-<section class="relative" style="top:-40px">
+<section >
     
     <video
     loop="loop"
     autoplay="autoplay"
     playsinline
     muted="muted"
-    class="w-full h-full object-cover"
-    style="min-height:500px;"
+    class="w-full h-full object-cover absolute"
+    style="min-height:500px; top:-40px"
     src="./video/background.mp4">
         
-
     </video>
+    <div style="padding: 0px 21px;">
+   
+
+    <div class="relative z-10 " style="max-width:380px; ">
+        <h1 style="font-size: 40px" class="text-white"> Boost Your <br /> <span class="text-brand-teal" >Development Career</span>
+        </h1>
+        <p class="text-white" style="max-width:300; text-align: left; margin-top: 15px;;">
+            My practise website CSS 2022</p>
+        <button style="margin-top:15px; border-radius: 4px;" class="bg-white text-brand-teal-dark border-none py-12 px-28">
+            Get Started
+        </button>
+    </div>
+    </div>
 
 </section>
 </body>
