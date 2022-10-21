@@ -12,6 +12,7 @@
         -moz-osx-font-smoothin: grayscale;
         margin:0;
         font-family: 'Lato', sans-serif;
+        
     }
 
     button{
@@ -144,65 +145,79 @@ align-items: center;
 .leading-none{
     line-height: 1px;
 }
+.h-385px{
+    height:385px;
+}
+/*small screen*/
 @media( min-width: 640px) {
-    .sm\:.text-60px {
+    .sm\:text-60px {
         font-size: 60px;
     }
     .sm\:text-20px{
             font-size: 20px;
         }
-    .sm\:inline{
-        display: inline;
-    }}
+    
+}
+    @media( min-width: 786px) {
+        .md\:h-786px {
+        height:876px;
+    }
+    }
 
+  
 
 </style>
 </head>
 
 <body>
-<header class="flex justify-between relative z-10 mx-auto"
-        style="padding: 18px 21px; max-width:1200px;">
+<header class="flex justify-between relative z-20 mx-auto px-6"
+        style=" max-width:1200px;">
     <div class="flex justify-content item-center">
         
         <img src="./svg-1.svg" alt="" style="width:50px; height:50px; margin-right: 50px;">
         
         <nav class=" hidden md:block">
-        <a href=""  class="text-white  no-underline " style="padding-top: 8px; padding-bottom: 8px; padding-left: 35px; padding-right: 35px;">Pricing</a>
-        <a href=""  class=" text-white no-underline " style="padding-top: 8px; padding-bottom: 8px; padding-left: 35px; padding-right: 35px;">Courses</a>
-        <a href=""  class=" text-white no-underline" style="padding-top: 8px; padding-bottom: 8px; padding-left: 35px; padding-right: 35px;">Blog</a>
-        <a href=""  class=" text-white no-underline " style="padding-top: 8px; padding-bottom: 8px; padding-left: 35px; padding-right: 35px;">Forum</a>
+        <a href=""  class="text-white  no-underline " style="padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 35px;">Pricing</a>
+        <a href=""  class=" text-white no-underline " style="padding-top: 8px; padding-bottom: 8px; padding-left: 25px; padding-right: 35px;">Courses</a>
+        <a href=""  class=" text-white no-underline" style="padding-top: 8px; padding-bottom: 8px; padding-left: 25px; padding-right: 35px;">Blog</a>
+        <a href=""  class=" text-white no-underline " style="padding-top: 8px; padding-bottom: 8px; padding-left: 25px; padding-right: 35px;">Forum</a>
         </nav>
     </div>
     <div class="item-center hidden md:flex">
-        <a href=""class="text-white block  no-underline" style="margin-right:12px; padding-top: 8px; padding-bottom: 8px; padding-left: 35px;padding-right: 35px;">Login</a>
+        <a href=""class="text-white block  no-underline" style="margin-right:12px; padding-top: 8px; padding-bottom: 8px; padding-left: 30px;padding-right: 35px;">Login</a>
         <button style="padding:15px;"class="bg-brand-teal text-white border-none rounded-full py-12 px-28 font-bold uppercase text-sm ">Sign up</button>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white md:hidden">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
       
 </header>
-<section>
+<section class="relative" style="margin-top: -10; padding-top: 20;">
     
-    <video
-    loop="loop"
-    autoplay="autoplay"
-    playsinline
-    muted="muted"
-    class="w-full h-full object-cover absolute"
-    style="height:700px; top:-40px"
-    src="./video/background.mp4">
+    <div class="absolute h-385px md:h-786px" 
+            style="top:-40px;height:876px;">
+        <div class="bg-black inset-0 absolute z-10 opacity-50">
+        </div>
+        <video
+        loop="loop"
+        autoplay="autoplay"
+        playsinline
         
-    </video>
-    <div style="padding: 0px 21px; padding-top: 200px; max-width:1200px;" class="mx-auto">
+        muted="muted"
+        class="w-full h-full object-cover "
+        
+        src="./video/background.mp4"> 
+        </video>
+    </div>
+    <div style=" max-width:1200px;" class="mx-auto  md:pt-32 px-6">
    
 
     <div class="relative z-10 " style="max-width:380px">
-        <h1 class="text-white text-36px sm:text-60px font-bold leading-none "> Boost Your <br /> <span class="text-brand-teal" >Development Career</span>
+        <h1 class="text-white text-36px sm:text-60px font-bold leading-none  "> Boost Your <br /> <span class="text-brand-teal" >Development Career</span>
         </h1>
         <p class="text-white text-16px sm:text-20px" style="max-width:300; text-align: left; margin-top: 15px;;">
             My practise website CSS 2022</p>
-        <button style="margin-top:20px; padding: 10px; border-radius: 4px; " class="bg-white text-brand-teal-dark border-none py-12 px-28 ">
+        <button style="margin-top:20px; margin-left: 5px; padding: 10px; border-radius: 4px; " class="bg-white text-brand-teal-dark border-none py-12 px-28 w-full md:w-auto ">
             Get Started
         </button>
     </div>
